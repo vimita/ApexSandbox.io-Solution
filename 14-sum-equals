@@ -1,0 +1,13 @@
+public Boolean sumEquals(Integer a, Integer b, Integer c) {
+    //code here
+    Integer sum = a+b;
+    if(sum == c){
+        return true;
+    }else{
+        return false;
+    }
+}
+Boolean result1 = sumEquals(5, 5, 10);
+System.debug(result1);
+Boolean result2 = sumEquals(2, 8, 9);
+System.debug(result2);
