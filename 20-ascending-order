@@ -1,13 +1,10 @@
 public Boolean ascendingOrder(Integer a, Integer b, Integer c) {
     //code here
-    if(b >= a || c >= b){
-        return true;
-    }
-    else if(b <= a || c <=b){
+    if(b <= a || c <=b){
         return false;
     }
     else{
-         return false;
+         return true;
     }
 }
 
