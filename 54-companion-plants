@@ -1,40 +1,27 @@
 public Boolean companionPlants(String plant1, String plant2) {
-    //code here
-    Boolean isCompanion  = false;
+    Boolean isCompanion = false;
+
     if (plant1 == 'onions') {
         if (plant2 == 'lettuce' || plant2 == 'carrots' || plant2 == 'tomatoes') {
-            isCompanion  = true;
-            return isCompanion;
+            isCompanion = true;
         }
     } else if (plant1 == 'lettuce') {
         if (plant2 == 'cucumbers' || plant2 == 'onions') {
-            isCompanion  = true;
-            return isCompanion;
+            isCompanion = true;
         }
     } else if (plant1 == 'cucumbers') {
         if (plant2 == 'lettuce') {
-            isCompanion  = true;
-            return isCompanion;
+            isCompanion = true;
         }
     } else if (plant1 == 'carrots') {
         if (plant2 == 'onions') {
-            isCompanion  = true;
-            return isCompanion;
+            isCompanion = true;
         }
     } else if (plant1 == 'tomatoes') {
         if (plant2 == 'onions') {
-            isCompanion  = true;
-            return isCompanion;
+            isCompanion = true;
         }
     }
-    else{
-        isCompanion  = false;
-        return isCompanion;
-    }
 
-    
+    return isCompanion; // Moved the return statement outside the if-else blocks
 }
-Boolean result1 = companionPlants('onions', 'lettuce');
-System.debug(result1);
-Boolean result2 = companionPlants('lettuce', 'tomatoes');
-System.debug(result2);
