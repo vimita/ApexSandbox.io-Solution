@@ -7,3 +7,6 @@ public Boolean isTypeAccount(sObject record)
         return false;
     }
 }
+Account acc = new Account(name='Apple')
+Boolean result = isTypeAccount(acc);
+System.debug("result => "+result);
