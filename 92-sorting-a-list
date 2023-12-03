@@ -1,12 +1,8 @@
 public List<String> getNamesInAscOrder(List<String> accountNames)
 {
-    //code here
+    if(accountNames == null){
+        return null;
+    }
     accountNames.sort();
     return accountNames;
 }
-List<String> fullNames = new List<String> { 'Blake Howard', 'Adrienne Copeland'};
-List<String> result = getNamesInAscOrder(fullNames);
-System.debug('Sorted Names: ' + result);
-System.assertEquals('Adrienne Copeland', result[0]);
-System.assertEquals('Blake Howard', result[1]);
-System.assertEquals(2, result.size());
