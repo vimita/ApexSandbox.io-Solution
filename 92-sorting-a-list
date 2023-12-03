@@ -1,0 +1,8 @@
+public List<String> getNamesInAscOrder(List<String> accountNames)
+{
+    //code here
+    accountNames.sort();
+    return accountNames;
+}
+List<String> fullNames = new List<String> { 'Blake Howard', 'Adrienne Copeland'};
+List<String> result = getNamesInAscOrder(fullNames);
