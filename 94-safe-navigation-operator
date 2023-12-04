@@ -4,7 +4,7 @@ public String getAccountBillingCityWithSafeNavigation(List<Account> accounts){
        if(acc.BillingCity.get(0) == null){
            return null;
        }
-       return BillingCity.toUpperCase();
+       return acc.BillingCity.toUpperCase();
    }
    //return accounts?.get(0)?.BillingCity?.toUpperCase();
 }
