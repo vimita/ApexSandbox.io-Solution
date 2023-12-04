@@ -1,20 +1,14 @@
 public List<Account> checkAccounts(List<Account> accounts)
 {
     // code here
-    String result;
-    
-    if(accounts == null){
-        return null;
-    }
+    if(accounts == null)
+        return null;    
     for(Account account: accounts)
     {
-        if(account.BillingCity == null){
+        if(account.BillingCity == null)
             throw new AccountException('Invalid BillingCity');
-        }
     }
     return accounts;
-    
-    
 }
 
 //do not remove the following custom-defined exception
