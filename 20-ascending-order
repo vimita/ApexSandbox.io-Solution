@@ -7,10 +7,3 @@ public Boolean ascendingOrder(Integer a, Integer b, Integer c) {
          return true;
     }
 }
-
-Boolean result1 = ascendingOrder(10, 10, 15);
-System.debug(result1);
-Boolean result2 = ascendingOrder(15, 14, 13);
-System.debug(result2);
-Boolean result3 = ascendingOrder(15, 14, 15);
-System.debug(result3);
