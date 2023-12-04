@@ -2,13 +2,10 @@ public List<Account> checkAccounts(List<Account> accounts)
 {
     // code here
     String result;
-    try{
-        if(accounts == null){
+    
+    if(accounts == null){
         return null;
     }
-    catch(IllegalArgumentException e){
-        result = e.getMessage();
-    } 
     for(Account account: accounts)
     {
         if(account.BillingCity == null){
