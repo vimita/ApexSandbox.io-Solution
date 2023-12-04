@@ -4,7 +4,7 @@ public List<Account> checkAccounts(List<Account> accounts)
     String result;
     try{
         if(accounts == null){
-        return result;
+        return null;
     }
     catch(IllegalArgumentException e){
         result = e.getMessage();
