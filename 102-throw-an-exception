@@ -1,17 +1,22 @@
 public List<Account> checkAccounts(List<Account> accounts)
 {
     // code here
-    if(accounts == null){
-        return null;
-
-    }
-    for(Account account: accounts)
-    {
-        if(account.BillingCity == null){
-            throw new AccountException('Invalid BillingCity');
+    String result;
+    try{
+        if(accounts == null){
+        return result;
         }
+        for(Account account: accounts)
+        {
+            if(account.BillingCity == null){
+                throw new AccountException('Invalid BillingCity');
+            }
+        }
+        return accounts;
     }
-    return accounts; 
+    catch(IllegalArgumentException e){
+        result = e.getMessage();
+    } 
 }
 
 //do not remove the following custom-defined exception
