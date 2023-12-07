@@ -14,7 +14,7 @@ public String getAccountBillingCityWithSafeNavigation(List<Account> accounts){
     // return billingCities;
 
    // Using safe navigation operator (?.)
-   return accounts?.get(0)?.BillingCity?.toUpperCase();
+    return accounts?.get(0)?.BillingCity?.toUpperCase();
 }
 
 List<Account> acts = new ListList<Account>();
