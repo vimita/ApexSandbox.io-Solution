@@ -1,18 +1,22 @@
 public String getAccountBillingCityWithSafeNavigation(List<Account> accounts){
    // Code here
-    List<String> billingCities = new List<String>();
+   // using normal loop, conditional logic 
+    // List<String> billingCities = new List<String>();
     
-    for(Account acc: accounts){
-        if(acc.BillingCity != null){
-            billingCities.add(acc.BillingCity.toUpperCase());
-        } else {
-            return null; 
-        }
-    }
+    // for(Account acc: accounts){
+    //     if(acc.BillingCity != null){
+    //         billingCities.add(acc.BillingCity.toUpperCase());
+    //     } else {
+    //         return null; 
+    //     }
+    // }
     
-    return billingCities;
-   //return accounts?.get(0)?.BillingCity?.toUpperCase();
+    // return billingCities;
+
+   // Using safe navigation operator (?.)
+   return accounts?.get(0)?.BillingCity?.toUpperCase();
 }
+
 List<Account> acts = new ListList<Account>();
 acts.add(new Account(Name = 'Acme', BillingCity = 'Chicago'));
 acts.add(new Account(Name = 'Dove', BillingCity = 'Boston'));
