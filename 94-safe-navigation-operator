@@ -17,8 +17,4 @@ public String getAccountBillingCityWithSafeNavigation(List<Account> accounts){
     return accounts?.get(0)?.BillingCity?.toUpperCase();
 }
 
-List<Account> acts = new ListList<Account>();
-acts.add(new Account(Name = 'Acme', BillingCity = 'Chicago'));
-acts.add(new Account(Name = 'Dove', BillingCity = 'Boston'));
-String result = getAccountBillingCityWithSafeNavigation(acts);
-System.debug('Result: ' + result);
+
